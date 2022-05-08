@@ -14,7 +14,7 @@ namespace TSApiTemplate.Borkers.Storages
             this.Database.Migrate();
         }
 
-      
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string connectionString = this.configuration

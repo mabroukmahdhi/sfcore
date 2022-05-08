@@ -2,10 +2,8 @@
 // Copyright (c) Coalition of the Good-Hearted Engineers 
 // ---------------------------------------------------------------
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using RESTFulSense.Controllers;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using TSApiTemplate.Models.WeatherForecasts;

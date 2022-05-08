@@ -1,11 +1,11 @@
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "Mabrouk Mahdhi",
-  "classifications": [ "Web", "API" ],
-  "name": "TheStandardApi",
+  "classifications": [ "Web", "WebAPI", "TheStandard" ],
+  "name": "StandardApi",
   "defaultName": "TheStandardApi",
-  "identity": "TheStandard.Api.Template",
-  "shortName": "tsapi",
+  "identity": "Standard.Api.Template",
+  "shortName": "standardapi",
   "sourceName": "TSApiTemplate",
   "tags": {
     "language": "C#",
