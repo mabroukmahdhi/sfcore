@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "sf": {
+      "commandName": "Project",
+      "commandLineArgs": "exceptions generate User -a sf"
+    }
+  }
+}
