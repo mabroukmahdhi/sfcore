@@ -4,7 +4,7 @@
         <Identity Id="the.standard.framework" Version="1.0" Language="en-US" Publisher="Mabrouk Mahdhi" />
         <DisplayName>The Standard Framework</DisplayName>
         <Description xml:space="preserve">Project &amp; Item Templates for the 'The Standard' community</Description>
-        <Icon>Assets\ic_api.png</Icon>
+        <Icon>Assets\ic_template.png</Icon>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
