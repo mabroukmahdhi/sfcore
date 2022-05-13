@@ -1,6 +1,0 @@
-﻿namespace #namespace#
-{
-    public class Failed#Model#ServiceException:Exception
-    {
-    }
-}

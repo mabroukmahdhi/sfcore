@@ -1,6 +1,0 @@
-﻿namespace #namespace#
-{
-   public class Invalid#Model#Exception:Exception
-    {
-    }
-}
