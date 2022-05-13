@@ -1,0 +1,38 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <Header>
+        <Title>Service Exception</Title>
+        <Author>Mabrouk Mahdhi</Author>
+        <Shortcut>serexep</Shortcut>
+        <Description>Code snippet for "Service Exception"</Description>
+        <SnippetTypes>
+            <SnippetType>Expansion</SnippetType>
+        </SnippetTypes>
+    </Header>
+    <Snippet>
+        <Declarations>
+            <Literal>
+                <ID>model</ID>
+                <ToolTip>Model name to generate</ToolTip>
+                <Default>MyModel</Default>
+            </Literal>
+        </Declarations>
+		<Imports>
+			<Import>
+				<Namespace>System</Namespace>
+			</Import>
+			<Import>
+				<Namespace>Xeptions</Namespace>
+			</Import>
+		</Imports>
+        <Code Language="CSharp">
+            <![CDATA[
+			public class $model$ServiceException : Xeption
+            {
+                public $model$ServiceException (Exception innerException) :
+                    base(message: "$model$ service error occurred, contact support.", innerException)
+                { }
+            }
+            ]]>
+        </Code>
+    </Snippet>
+</CodeSnippet>

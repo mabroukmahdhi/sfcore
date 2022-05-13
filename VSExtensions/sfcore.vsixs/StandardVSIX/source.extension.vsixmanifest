@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="the.standard.framework" Version="1.0" Language="en-US" Publisher="Mabrouk Mahdhi" />
+        <Identity Id="mahdhi.standard.framework" Version="1.0.1" Language="en-US" Publisher="Mabrouk Mahdhi" />
         <DisplayName>The Standard Framework</DisplayName>
         <Description xml:space="preserve">Project &amp; Item Templates for the 'The Standard' community</Description>
         <Icon>Assets\ic_template.png</Icon>
@@ -22,5 +22,6 @@
         <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Standard Api Template.zip" />
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Standard Library Template.zip" />
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="Snippets\standardsnippets.pkgdef" />
     </Assets>
 </PackageManifest>

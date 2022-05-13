@@ -1,0 +1,39 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <Header>
+        <Title>Validation Exception</Title>
+        <Author>Mabrouk Mahdhi</Author>
+        <Shortcut>valexep</Shortcut>
+        <Description>Code snippet for "Validation Exception"</Description>
+        <SnippetTypes>
+            <SnippetType>Expansion</SnippetType>
+        </SnippetTypes>
+    </Header>
+    <Snippet>
+        <Declarations>
+            <Literal>
+                <ID>model</ID>
+                <ToolTip>Model name to generate</ToolTip>
+                <Default>MyModel</Default>
+            </Literal>
+        </Declarations>
+		<Imports>
+			<Import>
+				<Namespace>System</Namespace>
+			</Import>
+			<Import>
+				<Namespace>Xeptions</Namespace>
+			</Import>
+		</Imports>
+        <Code Language="CSharp">
+            <![CDATA[
+			public class $model$ValidationException : Xeption
+            {
+                public $model$ValidationException(Xeption innerException)
+                    : base(message: "$model$ validation errors occurred, please try again.",
+                          innerException)
+                { }
+            }
+            ]]>
+        </Code>
+    </Snippet>
+</CodeSnippet>

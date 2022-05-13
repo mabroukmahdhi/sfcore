@@ -1,0 +1,38 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <Header>
+        <Title>Dependency Validation Exception</Title>
+        <Author>Mabrouk Mahdhi</Author>
+        <Shortcut>depvalexep</Shortcut>
+        <Description>Code snippet for "Dependency Validation Exception"</Description>
+        <SnippetTypes>
+            <SnippetType>Expansion</SnippetType>
+        </SnippetTypes>
+    </Header>
+    <Snippet>
+        <Declarations>
+            <Literal>
+                <ID>model</ID>
+                <ToolTip>Model name to generate</ToolTip>
+                <Default>MyModel</Default>
+            </Literal>
+        </Declarations>
+		<Imports>
+			<Import>
+				<Namespace>System</Namespace>
+			</Import>
+			<Import>
+				<Namespace>Xeptions</Namespace>
+			</Import>
+		</Imports>
+        <Code Language="CSharp">
+            <![CDATA[
+			public class $model$DependencyValidationException : Xeption
+            {
+                public $model$DependencyValidationException(Xeption innerException) :
+                    base(message: "$model$ dependency validation occurred, please try again.", innerException)
+                { }
+            }
+            ]]>
+        </Code>
+    </Snippet>
+</CodeSnippet>

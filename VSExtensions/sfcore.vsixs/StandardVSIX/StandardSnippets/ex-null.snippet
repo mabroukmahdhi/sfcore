@@ -1,0 +1,35 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <Header>
+        <Title>Null Exception</Title>
+        <Author>Mabrouk Mahdhi</Author>
+        <Shortcut>nullexep</Shortcut>
+        <Description>Code snippet for "Null Exception"</Description>
+        <SnippetTypes>
+            <SnippetType>Expansion</SnippetType>
+        </SnippetTypes>
+    </Header>
+    <Snippet>
+        <Declarations>
+            <Literal>
+                <ID>model</ID>
+                <ToolTip>Model name to generate</ToolTip>
+                <Default>MyModel</Default>
+            </Literal>
+        </Declarations>
+		<Imports>
+			<Import>
+				<Namespace>Xeptions</Namespace>
+			</Import>
+		</Imports>
+        <Code Language="CSharp">
+            <![CDATA[
+			public class Null$model$Exception : Xeption
+            {
+                public Null$model$Exception()
+                    : base(message: "$model$ is null.")
+                { }
+            }
+            ]]>
+        </Code>
+    </Snippet>
+</CodeSnippet>

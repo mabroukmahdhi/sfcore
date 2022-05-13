@@ -1,0 +1,37 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <Header>
+        <Title>Locked Exception</Title>
+        <Author>Mabrouk Mahdhi</Author>
+        <Shortcut>lockexep</Shortcut>
+        <Description>Code snippet for "Locked Exception"</Description>
+        <SnippetTypes>
+            <SnippetType>Expansion</SnippetType>
+        </SnippetTypes>
+    </Header>
+    <Snippet>
+        <Declarations>
+            <Literal>
+                <ID>model</ID>
+                <ToolTip>Model name to generate</ToolTip>
+                <Default>MyModel</Default>
+            </Literal>
+        </Declarations>
+		<Imports>
+			<Import>
+				<Namespace>System</Namespace>
+			</Import>
+			<Import>
+				<Namespace>Xeptions</Namespace>
+			</Import>
+		</Imports>
+        <Code Language="CSharp">
+            <![CDATA[
+			public class Locked$model$Exception : Xeption
+            {
+                public Locked$model$Exception(Exception innerException)
+                    : base(message: "Locked $model$ record exception, please try again later", innerException) { }
+            }
+            ]]>
+        </Code>
+    </Snippet>
+</CodeSnippet>

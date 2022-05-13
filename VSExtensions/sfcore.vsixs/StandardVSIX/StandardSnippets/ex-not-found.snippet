@@ -1,0 +1,43 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <Header>
+        <Title>Not Found Exception</Title>
+        <Author>Mabrouk Mahdhi</Author>
+        <Shortcut>notfexep</Shortcut>
+        <Description>Code snippet for "Not Found Exception"</Description>
+        <SnippetTypes>
+            <SnippetType>Expansion</SnippetType>
+        </SnippetTypes>
+    </Header>
+    <Snippet>
+        <Declarations>
+            <Literal>
+                <ID>model</ID>
+                <ToolTip>Model name to generate</ToolTip>
+                <Default>MyModel</Default>
+            </Literal>
+			<Literal>
+				<ID>modelId</ID>
+				<ToolTip>Id of the model</ToolTip>
+				<Default>myModelId</Default>
+			</Literal>
+        </Declarations>
+		<Imports>
+			<Import>
+				<Namespace>System</Namespace>
+			</Import>
+			<Import>
+				<Namespace>Xeptions</Namespace>
+			</Import>
+		</Imports>
+        <Code Language="CSharp">
+            <![CDATA[
+			public class NotFound$model$Exception : Xeption
+            {
+                public NotFound$model$Exception(Guid $modelId$)
+                    : base(message: $$"Couldn't find $model$ with id: {$modelId$}.")
+                { }
+            }
+            ]]>
+        </Code>
+    </Snippet>
+</CodeSnippet>
