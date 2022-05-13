@@ -9,7 +9,7 @@ using SFcore.Library.Template.Services.Foundations.Messages;
 using System;
 using Tynamix.ObjectFiller;
 
-namespace SFcore.Library.Template.Tests.Unit.Services.Foundations.Messages
+namespace $safeprojectname$.Services.Foundations.Messages
 {
     public partial class MessageServieTests
     {

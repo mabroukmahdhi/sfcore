@@ -1,0 +1,62 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Standard Library Template</Name>
+    <Description>The Standard:  Library Template</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Standard Library Template</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="SFcore.Library.Template.csproj" File="SFcore.Library.Template.csproj" ReplaceParameters="true">
+      <Folder Name="Brokers" TargetFolderName="Brokers">
+        <Folder Name="DateTimes" TargetFolderName="DateTimes">
+          <ProjectItem ReplaceParameters="true" TargetFileName="DateTimeBroker.cs">DateTimeBroker.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="IDateTimeBroker.cs">IDateTimeBroker.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Formatters" TargetFolderName="Formatters">
+          <ProjectItem ReplaceParameters="true" TargetFileName="FormatterBroker.cs">FormatterBroker.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="IFormatterBroker.cs">IFormatterBroker.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Models" TargetFolderName="Models">
+        <Folder Name="Messages" TargetFolderName="Messages">
+          <Folder Name="Exceptions" TargetFolderName="Exceptions">
+            <ProjectItem ReplaceParameters="true" TargetFileName="AlreadyExistsMessageException.cs">AlreadyExistsMessageException.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="FailedMessageServiceException.cs">FailedMessageServiceException.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="FailedMessageStorageException.cs">FailedMessageStorageException.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="InvalidMessageException.cs">InvalidMessageException.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="InvalidMessageReferenceException.cs">InvalidMessageReferenceException.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="LockedMessageException.cs">LockedMessageException.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="MessageDependencyException.cs">MessageDependencyException.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="MessageDependencyValidationException.cs">MessageDependencyValidationException.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="MessageServiceException.cs">MessageServiceException.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="MessageValidationException.cs">MessageValidationException.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="NotFoundMessageException.cs">NotFoundMessageException.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="NullMessageException.cs">NullMessageException.cs</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Message.cs">Message.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Services" TargetFolderName="Services">
+        <Folder Name="Foundations" TargetFolderName="Foundations">
+          <Folder Name="Messages" TargetFolderName="Messages">
+            <ProjectItem ReplaceParameters="true" TargetFileName="IMessageService.cs">IMessageService.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="MessageService.cs">MessageService.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="MessageService.Exceptions.cs">MessageService.Exceptions.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="MessageService.Validations.cs">MessageService.Validations.cs</ProjectItem>
+          </Folder>
+        </Folder>
+        <Folder Name="Orchestrations" TargetFolderName="Orchestrations" />
+        <Folder Name="Processings" TargetFolderName="Processings" />
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

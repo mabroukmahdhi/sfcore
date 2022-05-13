@@ -7,7 +7,7 @@ using ADotNet.Models.Pipelines.GithubPipelines.DotNets.Tasks;
 using ADotNet.Models.Pipelines.GithubPipelines.DotNets.Tasks.SetupDotNetTaskV1s;
 using System.Collections.Generic;
 
-namespace SFcore.Library.Template.Infrastructure.Build
+namespace $safeprojectname$
 {
     internal class Program
     {

@@ -1,0 +1,29 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Standard Library Unit Tests</Name>
+    <Description>The Standard: xUnit Test Project Template for a library</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Standard Library Unit Tests</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="SFcore.Library.Template.Tests.Unit.csproj" File="SFcore.Library.Template.Tests.Unit.csproj" ReplaceParameters="true">
+      <Folder Name="Services" TargetFolderName="Services">
+        <Folder Name="Foundations" TargetFolderName="Foundations">
+          <Folder Name="Messages" TargetFolderName="Messages">
+            <ProjectItem ReplaceParameters="true" TargetFileName="MessageServieTests.cs">MessageServieTests.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="MessageServieTests.Logic.cs">MessageServieTests.Logic.cs</ProjectItem>
+          </Folder>
+        </Folder>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

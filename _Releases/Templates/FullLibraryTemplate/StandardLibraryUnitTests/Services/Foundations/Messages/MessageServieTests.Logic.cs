@@ -8,7 +8,7 @@ using SFcore.Library.Template.Models.Messages;
 using System;
 using Xunit;
 
-namespace SFcore.Library.Template.Tests.Unit.Services.Foundations.Messages
+namespace $safeprojectname$.Services.Foundations.Messages
 {
     public partial class MessageServieTests
     {
