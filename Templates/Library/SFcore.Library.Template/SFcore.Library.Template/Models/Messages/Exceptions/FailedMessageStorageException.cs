@@ -1,0 +1,15 @@
+﻿// ---------------------------------------------------------------
+// Copyright (c) Coalition of the Good-Hearted Engineers 
+// ---------------------------------------------------------------
+using System;
+using Xeptions;
+
+namespace SFcore.Library.Template.Models.Messages.Exceptions
+{
+    public class FailedMessageStorageException : Xeption
+    {
+        public FailedMessageStorageException(Exception innerException)
+            : base(message: "Failed Message storage error occurred, contact support.", innerException)
+        { }
+    }
+}
