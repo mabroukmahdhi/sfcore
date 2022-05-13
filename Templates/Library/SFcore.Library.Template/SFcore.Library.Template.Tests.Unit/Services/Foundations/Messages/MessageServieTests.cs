@@ -31,12 +31,15 @@ namespace SFcore.Library.Template.Tests.Unit.Services.Foundations.Messages
                 formatterBroker: this.formatterBrokerMock.Object);
         }
 
-        private static string GetRandomMessage() =>
+        private static DateTimeOffset GetRandomDateTimeOffset() =>
+            new DateTimeRange(earliestDate: new DateTime()).GetValue();
+
+        private static string GetRandomText() =>
          new MnemonicString().GetValue();
 
-        private static Message CreateRandomMethodInfo()
+        private static Message CreateRandomMessage()
         {
-            string randomMessage = GetRandomMessage();
+            string randomMessage = GetRandomText();
 
             return new Message() { Text = randomMessage };
         }
