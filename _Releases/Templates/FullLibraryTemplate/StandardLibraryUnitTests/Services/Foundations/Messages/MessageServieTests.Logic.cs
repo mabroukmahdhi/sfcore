@@ -4,7 +4,7 @@
 using FluentAssertions;
 using Force.DeepCloner;
 using Moq;
-using SFcore.Library.Template.Models.Messages;
+using $ext_safeprojectname$.Models.Messages;
 using System;
 using Xunit;
 

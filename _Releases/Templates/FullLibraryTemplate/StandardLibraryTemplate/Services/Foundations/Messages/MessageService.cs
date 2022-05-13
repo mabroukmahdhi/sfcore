@@ -28,7 +28,7 @@ namespace $safeprojectname$.Services.Foundations.Messages
 
                 DateTimeOffset dateTime = this.dateTimeBroker.GetCurrentDateTimeOffset();
 
-                string standardMessage = $"{0} => {1}";
+                string standardMessage = "{0} => {1}";
 
                 message.Text = this.formatterBroker.Format(standardMessage, dateTime, message.Text);
 

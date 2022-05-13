@@ -2,10 +2,10 @@
 // Copyright (c) Coalition of the Good-Hearted Engineers
 // ---------------------------------------------------------------
 using Moq;
-using SFcore.Library.Template.Brokers.DateTimes;
-using SFcore.Library.Template.Brokers.Formatters;
-using SFcore.Library.Template.Models.Messages;
-using SFcore.Library.Template.Services.Foundations.Messages;
+using $ext_safeprojectname$.Brokers.DateTimes;
+using $ext_safeprojectname$.Brokers.Formatters;
+using $ext_safeprojectname$.Models.Messages;
+using $ext_safeprojectname$.Services.Foundations.Messages;
 using System;
 using Tynamix.ObjectFiller;
 

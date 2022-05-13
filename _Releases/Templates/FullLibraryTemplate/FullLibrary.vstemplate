@@ -1,4 +1,4 @@
-<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
 	<TemplateData>
 		<Name>Standard Full Library</Name>
 		<Description>The Standard: Full Lirary Project Template that contains: Core project, Build Project for Github Pipeline and xUnit Tests Project </Description>
@@ -16,13 +16,13 @@
 	</TemplateData>
 	<TemplateContent>
 		<ProjectCollection>
-			<ProjectTemplateLink ProjectName="$projectname$">
+			<ProjectTemplateLink ProjectName="$projectname$" >
 				StandardLibraryTemplate\MyTemplate.vstemplate
 			</ProjectTemplateLink>
 			<ProjectTemplateLink ProjectName="$projectname$.Infrastructure.Build">
 				StandardInfrastructureBuild\MyTemplate.vstemplate
 			</ProjectTemplateLink>
-			<ProjectTemplateLink ProjectName="$projectname$.Tests.Unit">
+			<ProjectTemplateLink ProjectName="$projectname$.Tests.Unit" CopyParameters="true">
 				StandardLibraryUnitTests\MyTemplate.vstemplate
 			</ProjectTemplateLink>
 		</ProjectCollection>
