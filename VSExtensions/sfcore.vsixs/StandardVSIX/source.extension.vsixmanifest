@@ -5,6 +5,7 @@
         <DisplayName>The Standard Framework</DisplayName>
         <Description xml:space="preserve">Project &amp; Item Templates for the 'The Standard' community</Description>
         <Icon>Assets\ic_template.png</Icon>
+        <Tags>Standard Library API Template C#</Tags>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">

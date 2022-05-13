@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 using System.Threading;
 using Task = System.Threading.Tasks.Task;
 
-namespace VSIXProject1
+namespace StandardVSIX
 {
     /// <summary>
     /// This is the class that implements the package exposed by this assembly.
@@ -28,9 +28,9 @@ namespace VSIXProject1
     public sealed class StandardVSIXPackage : AsyncPackage
     {
         /// <summary>
-        /// VSIXProject1Package GUID string.
+        ///StandardVSIXPackage GUID string.
         /// </summary>
-        public const string PackageGuidString = "d897e91c-ef42-4d95-a63d-987d1e59759d";
+        public const string PackageGuidString = "afa2a54c-9319-466b-b3a4-82ab49bf064e";
 
         #region Package Members
 
