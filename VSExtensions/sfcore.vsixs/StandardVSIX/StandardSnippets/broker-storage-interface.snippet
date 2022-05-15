@@ -1,0 +1,40 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <Header>
+        <Title>Storage Broker Interface</Title>
+        <Author>Mabrouk Mahdhi</Author>
+        <Shortcut>sbroki</Shortcut>
+        <Description>Code snippet for "Storage Broker Interface"</Description>
+        <SnippetTypes>
+            <SnippetType>Expansion</SnippetType>
+        </SnippetTypes>
+    </Header>
+    <Snippet>
+        <Declarations>
+            <Literal>
+                <ID>model</ID>
+                <ToolTip>Corresponding model</ToolTip>
+                <Default>MyModel</Default>
+            </Literal>
+        </Declarations>
+		<Imports>
+			<Import>
+				<Namespace>System</Namespace>
+			</Import>
+			<Import>
+				<Namespace>System.Linq</Namespace>
+			</Import>
+			<Import>
+				<Namespace>System.Threading.Tasks</Namespace>
+			</Import>
+		</Imports>
+        <Code Language="CSharp">
+            <![CDATA[
+		    ValueTask<$model$> Insert$model$Async($model$ $model$);
+            IQueryable<$model$> SelectAll$model$s();
+            ValueTask<$model$> Select$model$ByIdAsync(Guid $model$Id);
+            ValueTask<$model$> Update$model$Async($model$ $model$);
+            ValueTask<$model$> Delete$model$Async($model$ $model$);
+            ]]>
+        </Code>
+    </Snippet>
+</CodeSnippet>
